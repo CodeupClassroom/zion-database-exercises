@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS zion_test_db;
-CREATE DATABASE zion_test_db;
-USE zion_test_db;
+DROP DATABASE IF EXISTS codeup_test_db;
+CREATE DATABASE codeup_test_db;
+USE codeup_test_db;
 
 DROP TABLE IF EXISTS albums;
 
