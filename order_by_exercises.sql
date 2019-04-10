@@ -8,8 +8,7 @@ ORDER BY last_name DESC, first_name DESC;
 SELECT *
 FROM employees
 WHERE last_name LIKE 'E%'
-ORDER BY emp_no DESC
-LIMIT 30 OFFSET 1000;
+ORDER BY emp_no DESC;
 
 -- Find all employees hired in the 90s — 135,214 rows.
 SELECT *
@@ -46,13 +45,12 @@ SELECT *
 FROM employees
 WHERE last_name LIKE 'E%'
  OR   last_name LIKE '%e'
- LIMIT 10;
+ LIMIT 100;
 
 -- Duplicate the previous query and update it to find all employees whose last name starts and ends with 'E' — 899 rows.
 SELECT *
 FROM employees
-WHERE last_name LIKE 'E%e'
-LIMIT 5 OFFSET 15;
+WHERE last_name LIKE 'E%e';
 --  AND  last_name LIKE '%e';
 
 -- Find all employees hired in the 90s and born on Christmas — 362 rows.
