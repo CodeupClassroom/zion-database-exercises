@@ -13,7 +13,9 @@ CREATE TABLE albums (
   release_year YEAR,
   sales DECIMAL(9,5),
   genre VARCHAR(50),
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  UNIQUE (artist, name),
+  INDEX (YEAR)
 );
 
 SELECT 'Albums table created' AS 'Log';
